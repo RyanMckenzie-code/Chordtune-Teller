@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g id="crystal-ball" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="26" r="20" fill="#6aafff18" stroke="#6aafff" stroke-width="2"/>
+    <path d="M19 25a13 13 0 0 1 10-12" stroke="#edf4ff" stroke-width="2" opacity=".65"/>
+    <path d="m35 17 2.5 6.5L44 26l-6.5 2.5L35 35l-2.5-6.5L26 26l6.5-2.5Z" fill="#5fe0af" stroke="#5fe0af"/>
+    <path d="m49 7 1.5 3.5L54 12l-3.5 1.5L49 17l-1.5-3.5L44 12l3.5-1.5Z" fill="#edf4ff"/>
+    <path d="m20 44-5 10h34l-5-10M12 58h40" stroke="#5fe0af" stroke-width="3"/>
+    <path d="M24 50h16" stroke="#6aafff" stroke-width="2"/>
+  </g>
+</svg>

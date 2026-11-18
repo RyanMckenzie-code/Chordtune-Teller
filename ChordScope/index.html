@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#080f19" />
+    <title>Chordtune Teller | Guitar chord detector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap bar">
+        <strong class="brand">
+          <svg class="brand-ball" viewBox="0 0 64 64" aria-hidden="true">
+            <use href="crystal-ball.svg#crystal-ball" />
+          </svg>
+          Chordtune Teller</strong
+        ><span class="status"><i></i><span id="status">Mic offline</span></span>
+      </div>
+    </header>
+    <main class="wrap">
+      <div class="title">
+        <div class="eyebrow"><b></b> THE ART OF CHORD READING</div>
+        <div class="title-row">
+          <h1>Chordtune Teller<span>.</span></h1>
+          <svg
+            class="title-ball"
+            viewBox="0 0 64 64"
+            role="img"
+            aria-label="Crystal ball"
+          >
+            <use href="crystal-ball.svg#crystal-ball" />
+          </svg>
+        </div>
+        <p class="intro">Every chord holds a story. Let yours unfold.</p>
+      </div>
+      <section class="scope">
+        <div class="scopehead">
+          <label><i></i> THE LISTENING ROOM</label><span>LIVE AUDIO</span>
+        </div>
+        <canvas id="wave" aria-hidden="true"></canvas>
+        <div class="reading-label">YOUR CHORD READING</div>
+        <div class="read">
+          <div id="chord" aria-live="polite">No chord detected</div>
+          <div id="tones">Start listening, then strum a chord.</div>
+        </div>
+        <div class="control">
+          <button id="listen">
+            <svg viewBox="0 0 24 24">
+              <rect x="9" y="2" width="6" height="13" rx="3" />
+              <path d="M5 11v1a7 7 0 0 0 14 0v-1m-7 8v3m-4 0h8" /></svg
+            ><span>Start Listening</span>
+          </button>
+          <div id="meter">INPUT LEVEL <span id="bars"></span></div>
+        </div>
+      </section>
+      <p id="error" role="alert"></p>
+      <section class="ref">
+        <div class="refhead">
+          <div class="square">♯</div>
+          <h2>Your chord, revealed</h2>
+          <select id="choice" aria-label="Suggested chord fingering"></select>
+        </div>
+        <div class="columns">
+          <div>
+            <label>SUGGESTED VOICING</label
+            ><svg
+              id="board"
+              viewBox="0 0 420 180"
+              role="img"
+              aria-label="Suggested guitar fingering"
+            ></svg
+            ><small>Standard tuning · E A D G B E</small>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>STRING</th>
+                  <th>FRET</th>
+                  <th>PITCH</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <section class="voicing-section" aria-labelledby="voicing-title">
+          <div class="voicing-heading">
+            <div>
+              <h2 id="voicing-title">A spread of possibilities</h2>
+              <p id="voicing-caption" aria-live="polite"></p>
+            </div>
+            <div class="belt-controls">
+              <button
+                type="button"
+                data-slide="-1"
+                aria-label="Previous voicings"
+              >
+                &larr;
+              </button>
+              <button type="button" data-slide="1" aria-label="Next voicings">
+                &rarr;
+              </button>
+            </div>
+          </div>
+          <div
+            id="voicings"
+            class="voicing-belt"
+            role="group"
+            aria-label="Alternative chord voicings"
+            tabindex="0"
+          ></div>
+          <p class="voicing-note">
+            Swipe or use the arrows. Frets run from low E to high E; X means
+            mute. These are alternative positions, not a transcription of your
+            fingering. Some shapes may require a barre or a stretch.
+          </p>
+        </section>
+        <footer>
+          <span>ⓘ</span> Suggested positions. The same chord can be played with
+          other fingerings.
+        </footer>
+      </section>
+      <p class="closing-note">A little intuition. A little music theory.</p>
+      <div class="pitchline">
+        <label>DETECTED PITCHES</label
+        ><span id="pitches">Waiting for audio</span>
+      </div>
+    </main>
+    <script type="module" src="app.mjs"></script>
+  </body>
+</html>
