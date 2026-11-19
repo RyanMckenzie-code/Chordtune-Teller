@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <!-- Stepped halo and eight-point star on a square pixel grid. -->
+  <path d="M12 3h8v2h4v2h2v4h2v10h-2v4h-2v2h-4v2h-8v-2H8v-2H6v-4H4V11h2V7h2V5h4Z" fill="#b69a65"/>
+  <path d="M12 5h8v2h4v4h2v10h-2v4h-4v2h-8v-2H8v-4H6V11h2V7h4Z" fill="#211a38"/>
+  <path d="M15 2h2v8h2V8h2V6h2v4h-2v2h-2v2h4v1h7v2h-7v1h-4v2h2v2h2v4h-2v-2h-2v-2h-2v8h-2v-8h-2v2h-2v2H9v-4h2v-2h2v-2H9v-1H2v-2h7v-1h4v-2h-2v-2H9V6h2v2h2v2h2Z" fill="#f7cc76"/>
+  <path d="M15 11h2v3h1v1h3v2h-3v1h-1v3h-2v-3h-1v-1h-3v-2h3v-1h1Z" fill="#fff1cb"/>
+  <path d="M15 15h2v2h-2Z" fill="#80ffd4"/>
+  <path d="M3 1h2v2h2v2H5v2H3V5H1V3h2Zm24 24h2v2h2v2h-2v2h-2v-2h-2v-2h2Z" fill="#b49aff"/>
+  <path d="M27 3h2v2h-2ZM3 27h2v2H3Z" fill="#f7cc76"/>
+</svg>

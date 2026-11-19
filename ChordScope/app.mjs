@@ -37,7 +37,7 @@ function reference(i, shape = chords[i].shape) {
       '<path d="M' +
       x +
       ' 20v125" stroke="' +
-      (f === 0 && first === 1 ? "#d9edff" : "#51647b") +
+      (f === 0 && first === 1 ? "#d9edff" : "#89769e") +
       '" stroke-width="' +
       (f === 0 && first === 1 ? 4 : 2) +
       '"/>';
@@ -50,7 +50,7 @@ function reference(i, shape = chords[i].shape) {
     svg +=
       '<path d="M70 ' +
       y +
-      'h312" stroke="#70839b" stroke-width="' +
+      'h312" stroke="#a393bd" stroke-width="' +
       (2.4 - s * 0.25) +
       '"/><text x="17" y="' +
       (y + 4) +
@@ -61,7 +61,7 @@ function reference(i, shape = chords[i].shape) {
       svg +=
         '<text x="49" y="' +
         (y + 4) +
-        '" fill="#6aafff">' +
+        '" fill="#b49aff">' +
         v.toUpperCase() +
         "</text>";
     else {
@@ -71,7 +71,7 @@ function reference(i, shape = chords[i].shape) {
         x +
         '" cy="' +
         y +
-        '" r="11" fill="#5fe0af"/><text x="' +
+        '" r="11" fill="#80ffd4"/><text x="' +
         x +
         '" y="' +
         (y + 4) +
@@ -92,7 +92,7 @@ function reference(i, shape = chords[i].shape) {
     );
   });
   $("#board").innerHTML =
-    '<g fill="#8b9bb0" text-anchor="middle" font-family="monospace" font-size="12">' +
+    '<g fill="#b6a9d1" text-anchor="middle" font-family="monospace" font-size="12">' +
     svg +
     "</g>";
   $("tbody").innerHTML = rows.join("");
@@ -184,7 +184,7 @@ function draw(data, rms = 0) {
     h = (canvas.height = Math.round(canvas.clientHeight)),
     ctx = canvas.getContext("2d");
   // Leave the center clear for the readout; both sides show the current input trace.
-  ctx.strokeStyle = "#6aafff";
+  ctx.strokeStyle = "#b49aff";
   ctx.lineWidth = 1.2;
   ctx.beginPath();
   for (let x = 0; x < w; x++) {
@@ -196,7 +196,7 @@ function draw(data, rms = 0) {
   ctx.stroke();
   bars.forEach(
     (b, i) =>
-      (b.style.background = i < Math.min(16, rms * 125) ? "#5fe0af" : ""),
+      (b.style.background = i < Math.min(16, rms * 125) ? "#80ffd4" : ""),
   );
 }
 // Redraw the idle waveform when the canvas changes size.

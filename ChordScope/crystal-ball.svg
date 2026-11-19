@@ -1,10 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <g id="crystal-ball" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="32" cy="26" r="20" fill="#6aafff18" stroke="#6aafff" stroke-width="2"/>
-    <path d="M19 25a13 13 0 0 1 10-12" stroke="#edf4ff" stroke-width="2" opacity=".65"/>
-    <path d="m35 17 2.5 6.5L44 26l-6.5 2.5L35 35l-2.5-6.5L26 26l6.5-2.5Z" fill="#5fe0af" stroke="#5fe0af"/>
-    <path d="m49 7 1.5 3.5L54 12l-3.5 1.5L49 17l-1.5-3.5L44 12l3.5-1.5Z" fill="#edf4ff"/>
-    <path d="m20 44-5 10h34l-5-10M12 58h40" stroke="#5fe0af" stroke-width="3"/>
-    <path d="M24 50h16" stroke="#6aafff" stroke-width="2"/>
+  <g id="crystal-ball" shape-rendering="crispEdges">
+    <path d="M20 6h24v4h8v8h4v20h-4v8h-8v4H20v-4h-8v-8H8V18h4v-8h8Z" fill="#080719"/>
+    <path d="M20 10h24v4h8v24h-4v8H16v-8h-4V18h8Z" fill="#a78bfa"/>
+    <path d="M20 14h20v4h8v20h-8v4H20v-4h-4V22h4Z" fill="#6648bd"/>
+    <path d="M20 14h16v4H24v4h-4v8h-4V18h4Z" fill="#eee4ff"/>
+    <path d="M36 20h4v8h8v4h-8v8h-4v-8h-8v-4h8Z" fill="#80ffd4"/>
+    <path d="M16 46h32v4h4v8h4v4H8v-4h4v-8h4Z" fill="#080719"/>
+    <path d="M20 48h24v4h4v4H16v-4h4Zm-8 10h40v4H12Z" fill="#f7cc76"/>
+    <path d="M24 50h16v4H24Z" fill="#b77b51"/>
+    <path d="M54 2h4v4h4v4h-4v4h-4v-4h-4V6h4ZM2 36h4v4h4v4H6v4H2v-4H0v-4h2Z" fill="#f7cc76"/>
   </g>
 </svg>
